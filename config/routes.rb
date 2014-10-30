@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
-  get 'main/home'
+  resources :educations
 
-  resources :internships
+  resources :work_experiences
+
+  resources :projects
+
+  get 'main/home'
 
   resources :articles
 

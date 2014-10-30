@@ -1,21 +1,17 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: MyString
-  company: MyString
-  contry: MyString
+  facility_name: MyString
   start_date: MyString
   end_date: MyString
-  postion: MyString
-  company_annotation: MyString
+  subject: MyString
+  transcript: MyString
   detail: MyText
 
 two:
-  title: MyString
-  company: MyString
-  contry: MyString
+  facility_name: MyString
   start_date: MyString
   end_date: MyString
-  postion: MyString
-  company_annotation: MyString
+  subject: MyString
+  transcript: MyString
   detail: MyText

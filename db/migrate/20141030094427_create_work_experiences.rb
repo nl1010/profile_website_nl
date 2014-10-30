@@ -1,13 +1,11 @@
-class CreateInternships < ActiveRecord::Migration
+class CreateWorkExperiences < ActiveRecord::Migration
   def change
-    create_table :internships do |t|
+    create_table :work_experiences do |t|
       t.string :title
       t.string :company
-      t.string :contry
       t.string :start_date
       t.string :end_date
-      t.string :postion
-      t.string :company_annotation
+      t.string :position
       t.text :detail
 
       t.timestamps

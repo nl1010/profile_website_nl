@@ -11,11 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141028223419) do
+ActiveRecord::Schema.define(version: 20141030095102) do
 
   create_table "articles", force: true do |t|
     t.string   "title"
     t.text     "content"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "educations", force: true do |t|
+    t.string   "facility_name"
+    t.string   "start_date"
+    t.string   "end_date"
+    t.string   "subject"
+    t.string   "transcript"
+    t.text     "detail"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -28,6 +39,30 @@ ActiveRecord::Schema.define(version: 20141028223419) do
     t.string   "end_date"
     t.string   "postion"
     t.string   "company_annotation"
+    t.text     "detail"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "projects", force: true do |t|
+    t.string   "name"
+    t.string   "start_date"
+    t.string   "end_date"
+    t.string   "status"
+    t.integer  "priority"
+    t.text     "involved_tool"
+    t.text     "involved_team"
+    t.text     "detail"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "work_experiences", force: true do |t|
+    t.string   "title"
+    t.string   "company"
+    t.string   "start_date"
+    t.string   "end_date"
+    t.string   "position"
     t.text     "detail"
     t.datetime "created_at"
     t.datetime "updated_at"
