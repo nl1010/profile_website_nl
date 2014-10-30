@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141030095822) do
+ActiveRecord::Schema.define(version: 20141030100301) do
 
   create_table "abilities", force: true do |t|
     t.string   "name"
@@ -55,6 +55,24 @@ ActiveRecord::Schema.define(version: 20141030095822) do
     t.string   "end_date"
     t.string   "postion"
     t.string   "company_annotation"
+    t.text     "detail"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "patents", force: true do |t|
+    t.string   "title"
+    t.string   "people_involved"
+    t.string   "register_date"
+    t.string   "status"
+    t.text     "detail"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "products", force: true do |t|
+    t.string   "name"
+    t.string   "area"
     t.text     "detail"
     t.datetime "created_at"
     t.datetime "updated_at"

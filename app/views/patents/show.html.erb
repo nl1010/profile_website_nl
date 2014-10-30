@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @patent.title %>
+</p>
+
+<p>
+  <strong>People involved:</strong>
+  <%= @patent.people_involved %>
+</p>
+
+<p>
+  <strong>Register date:</strong>
+  <%= @patent.register_date %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @patent.status %>
+</p>
+
+<p>
+  <strong>Detail:</strong>
+  <%= @patent.detail %>
+</p>
+
+<%= link_to 'Edit', edit_patent_path(@patent) %> |
+<%= link_to 'Back', patents_path %>

@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :patents
+
+  resources :products
+
   resources :future_planes
 
   resources :abilities
