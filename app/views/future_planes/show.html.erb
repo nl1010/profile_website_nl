@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @future_plane.title %>
+</p>
+
+<p>
+  <strong>Planning time:</strong>
+  <%= @future_plane.planning_time %>
+</p>
+
+<p>
+  <strong>Detail:</strong>
+  <%= @future_plane.detail %>
+</p>
+
+<%= link_to 'Edit', edit_future_plane_path(@future_plane) %> |
+<%= link_to 'Back', future_planes_path %>

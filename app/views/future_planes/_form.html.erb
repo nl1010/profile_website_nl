@@ -1,0 +1,29 @@
+<%= form_for(@future_plane) do |f| %>
+  <% if @future_plane.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@future_plane.errors.count, "error") %> prohibited this future_plane from being saved:</h2>
+
+      <ul>
+      <% @future_plane.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :planning_time %><br>
+    <%= f.text_field :planning_time %>
+  </div>
+  <div class="field">
+    <%= f.label :detail %><br>
+    <%= f.text_area :detail %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

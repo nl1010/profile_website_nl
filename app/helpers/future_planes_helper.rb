@@ -1,0 +1,2 @@
+module FuturePlanesHelper
+end

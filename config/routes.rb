@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :future_planes
+
+  resources :abilities
+
   resources :educations
 
   resources :work_experiences

@@ -1,0 +1,29 @@
+<h1>Listing future_planes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Planning time</th>
+      <th>Detail</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @future_planes.each do |future_plane| %>
+      <tr>
+        <td><%= future_plane.title %></td>
+        <td><%= future_plane.planning_time %></td>
+        <td><%= future_plane.detail %></td>
+        <td><%= link_to 'Show', future_plane %></td>
+        <td><%= link_to 'Edit', edit_future_plane_path(future_plane) %></td>
+        <td><%= link_to 'Destroy', future_plane, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Future plane', new_future_plane_path %>
